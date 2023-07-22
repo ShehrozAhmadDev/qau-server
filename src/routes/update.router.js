@@ -1,7 +1,7 @@
 import express from "express";
 
 import { catchErrors } from "../middleware/error.middleware.js";
-import { verifyToken } from "../middleware/Auth.js";
+import { verifyToken } from "../middleware/auth.js";
 
 import {
   createUpdate,

@@ -10,6 +10,7 @@ import scheduleRoutes from "./src/Routes/schedule.router.js";
 import stopRoutes from "./src/routes/stop.router.js";
 import routeRoutes from "./src/Routes/route.router.js";
 import updateRoutes from "./src/routes/update.router.js";
+import tripRoutes from "./src/routes/trip.router.js";
 
 import dotenv from "dotenv";
 const app = express();
@@ -49,6 +50,7 @@ app.use("/api/schedule", scheduleRoutes);
 app.use("/api/route", routeRoutes);
 app.use("/api/stop", stopRoutes);
 app.use("/api/update", updateRoutes);
+app.use("/api/trip", tripRoutes);
 
 // Add other route files as needed
 
