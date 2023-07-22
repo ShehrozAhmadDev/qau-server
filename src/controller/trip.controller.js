@@ -12,7 +12,7 @@ export const planTrip = async (req, res, next) => {
       params: {
         origin,
         destination,
-        key: "YOUR_API_KEY",
+        key: "AIzaSyC8sfL4qz3H4hOTb5azUcQKVig9h87nFW0",
       },
     });
 
