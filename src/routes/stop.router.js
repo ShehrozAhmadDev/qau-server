@@ -7,7 +7,7 @@ import {
   deleteStop,
 } from "../controller/stop.controller.js";
 import { catchErrors } from "../middleware/error.middleware.js";
-import { verifyToken } from "../middleware/Auth.js";
+import { verifyToken } from "../middleware/auth.js";
 
 const router = express.Router();
 

@@ -7,7 +7,7 @@ import {
   deleteRoute,
 } from "../controller/route.controller.js";
 import { catchErrors } from "../middleware/error.middleware.js";
-import { verifyToken } from "../middleware/Auth.js";
+import { verifyToken } from "../middleware/auth.js";
 const router = express.Router();
 
 // Create a new Route
