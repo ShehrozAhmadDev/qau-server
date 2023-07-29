@@ -6,6 +6,10 @@ const scheduleSchema = new Schema({
   route: { type: Schema.Types.ObjectId, ref: "Route" },
   startTime: { type: Date },
   endTime: { type: Date },
+  driver: {
+    type: Schema.Types.ObjectId,
+    ref: "Driver",
+  },
   createdBy: {
     type: Schema.Types.ObjectId,
     ref: "User",

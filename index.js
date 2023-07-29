@@ -11,6 +11,7 @@ import stopRoutes from "./src/routes/stop.router.js";
 import routeRoutes from "./src/Routes/route.router.js";
 import updateRoutes from "./src/routes/update.router.js";
 import tripRoutes from "./src/routes/trip.router.js";
+import driverRoutes from "./src/routes/driver.router.js";
 
 import dotenv from "dotenv";
 const app = express();
@@ -51,6 +52,7 @@ app.use("/api/route", routeRoutes);
 app.use("/api/stop", stopRoutes);
 app.use("/api/update", updateRoutes);
 app.use("/api/trip", tripRoutes);
+app.use("/api/driver", driverRoutes);
 
 // Add other route files as needed
 

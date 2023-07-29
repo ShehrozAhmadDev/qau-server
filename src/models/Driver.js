@@ -2,9 +2,9 @@ import mongoose from "mongoose";
 var Schema = mongoose.Schema;
 
 const driverSchema = new Schema({
-  driverName: { type: String, required: true },
-  shiftStart: { type: Date, required: true },
-  shiftEnd: { type: Date, required: true },
+  name: { type: String, required: true },
+  contact: { type: String },
+  age: { type: Number },
   createdAt: {
     type: Date,
     default: () => Date.now(),
