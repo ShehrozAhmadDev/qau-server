@@ -8,6 +8,7 @@ import {
   getUserProfile,
   editUser,
   deleteUser,
+  getAllUsers,
 } from "../controller/user.controller.js";
 
 const router = express.Router();
@@ -20,6 +21,9 @@ router.post("/login", catchErrors(loginUser));
 
 // Route to get the user profile
 router.get("/profile", verifyToken, catchErrors(getUserProfile));
+
+// Route to get the user profile
+router.get("/", verifyToken, catchErrors(getAllUsers));
 
 // Route to edit user profile
 router.put("/:userId", verifyToken, catchErrors(editUser));
